@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тест для Насти 🐱🎂</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe9f2 0%, #fff4e6 50%, #e9f3ff 100%);
+    margin: 0;
+    padding: 16px;
+    color: #3a2b33;
+  }
+  #content {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fffdfb;
+    border-radius: 22px;
+    padding: 24px 18px 30px;
+    box-shadow: 0 10px 34px rgba(255,150,190,0.18);
+    border: 2px solid #ffe0ec;
+  }
+  h1 { text-align: center; font-size: 23px; margin: 6px 0 4px; color: #d6336c; }
+  .intro {
+    text-align: center; font-size: 15px; line-height: 1.5; color: #7a5a68;
+    background: #fff0f6; border: 1.5px dashed #ffc2d9; border-radius: 16px;
+    padding: 14px 16px; margin: 14px 0 6px;
+  }
+  .intro b { color: #d6336c; }
+  .subtitle { text-align: center; color: #9a7a88; font-size: 14px; margin: 10px 0 22px; }
+  h2 {
+    font-size: 17px; margin: 28px 0 12px; padding: 8px 12px;
+    background: linear-gradient(135deg, #fff0f6, #ffe9e3);
+    border-radius: 12px; color: #c2185b; display: flex; align-items: center; gap: 6px;
+  }
+  .question { margin-bottom: 14px; }
+  .q-text { font-weight: 600; font-size: 15px; margin-bottom: 6px; line-height: 1.35; }
+  .q-num { color: #ff7aa8; }
+  textarea {
+    width: 100%; min-height: 38px; padding: 10px 13px; font-size: 15px;
+    font-family: inherit; border: 1.5px solid #ffd6e5; border-radius: 12px;
+    resize: none; overflow: hidden; background: #fff8fb;
+    transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+  }
+  textarea:focus {
+    outline: none; border-color: #ff9cc1; background: #fff;
+    box-shadow: 0 0 0 3px rgba(255,156,193,0.18);
+  }
+  .buttons { margin-top: 30px; display: flex; flex-direction: column; gap: 10px; }
+  button {
+    width: 100%; padding: 15px; font-size: 16px; font-weight: 700;
+    border: none; border-radius: 14px; cursor: pointer; font-family: inherit;
+  }
+  #saveBtn {
+    background: linear-gradient(135deg, #ff8fbe, #ff5c9a); color: #fff;
+    box-shadow: 0 5px 16px rgba(255,92,154,0.35);
+  }
+  #saveBtn:active { transform: scale(0.98); }
+  #clearBtn { background: #fdeef4; color: #b56a86; }
+  .hint { text-align: center; font-size: 12px; color: #b09aa4; margin-top: 14px; }
+  #status { text-align: center; font-size: 14px; color: #c2185b; margin-top: 12px; font-weight: 600; display: none; }
+  .paws { text-align: center; font-size: 18px; margin-bottom: 4px; letter-spacing: 4px; }
+</style>
+</head>
+<body>
+
+<div id="content">
+  <div class="paws">🐾 🐱 🐾</div>
+  <h1>🎂 Тест для Насти: «Проверь себя!»</h1>
+
+  <div class="intro">
+    Ну что, <b>предыдущий год был разминка</b> — а в этом году участвуют больше людей, и всё серьёзно! 😼<br>
+    Отвечай <b>честно</b>.
+  </div>
+
+  <div class="subtitle">Отвечай коротко — одним словом или одной фразой 😄 Поля растягиваются сами.</div>
+
+  <h2>🐱 Разминка</h2>
+  <div class="question"><div class="q-text"><span class="q-num">1.</span> Сколько тебе исполняется?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">2.</span> Кем ты работаешь?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">3.</span> Любимое блюдо?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">4.</span> Любимый напиток утром?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">5.</span> Любимый напиток вечером?</div><textarea rows="1"></textarea></div>
+
+  <h2>🐾 Привычки</h2>
+  <div class="question"><div class="q-text"><span class="q-num">6.</span> Во сколько встаёшь?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">7.</span> Жаворонок или сова?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">8.</span> Что тебя мгновенно бесит?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">9.</span> Что мгновенно поднимает настроение?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">10.</span> Твоя самая странная привычка?</div><textarea rows="1"></textarea></div>
+
+  <h2>😻 Вкусы</h2>
+  <div class="question"><div class="q-text"><span class="q-num">11.</span> Любимый фильм?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">12.</span> Любимый сериал?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">13.</span> Любимая песня?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">14.</span> Любимый цвет?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">15.</span> Любимый запах?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">16.</span> Любимое время года?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">17.</span> Что закажешь в кафе?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">18.</span> Наличные или карта?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">19.</span> Любимая соцсеть?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">20.</span> Любимое домашнее животное?</div><textarea rows="1"></textarea></div>
+
+  <h2>💭 Мечты</h2>
+  <div class="question"><div class="q-text"><span class="q-num">21.</span> Профессия мечты в детстве?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">22.</span> Место, куда мечтаешь попасть?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">23.</span> Чему хочешь научиться?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">24.</span> Самое смелое желание на день рождения?</div><textarea rows="1"></textarea></div>
+
+  <h2>🫶 Люди</h2>
+  <div class="question"><div class="q-text"><span class="q-num">25.</span> Самое важное в дружбе?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">26.</span> За что не простишь?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">27.</span> Кто знает о тебе больше всех?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">28.</span> Каким человеком хочешь быть через 10 лет?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">29.</span> Что скажешь себе 10-летней?</div><textarea rows="1"></textarea></div>
+
+  <h2>⚡ Блиц</h2>
+  <div class="question"><div class="q-text"><span class="q-num">30.</span> Кофе или чай?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">31.</span> Гора или море?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">32.</span> Книга или фильм?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">33.</span> Вечеринка или вечер дома?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">34.</span> Утро или ночь?</div><textarea rows="1"></textarea></div>
+
+  <h2>😹 Только честно!</h2>
+  <div class="question"><div class="q-text"><span class="q-num">35.</span> Самая неловкая ситуация, в которую ты попадала?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">36.</span> Что ты гуглила последним?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">37.</span> Какой мем описывает тебя лучше всего?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">38.</span> Если бы твоя жизнь была сериалом — как бы он назывался?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">39.</span> Три слова, которыми тебя описали бы друзья?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">40.</span> Что ты никогда не наденешь?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">41.</span> Самая бесполезная вещь, которую ты когда-либо покупала?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">42.</span> Какая суперспособность тебе нужна прямо сейчас?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">43.</span> Что бы ты сделала, если бы завтра стал последним днём? <i>(без пафоса — можно шутить)</i></div><textarea rows="1"></textarea></div>
+
+  <h2>🙀 Очень сложно (только для своих!)</h2>
+  <div class="question"><div class="q-text"><span class="q-num">44.</span> Во сколько ты родилась?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">45.</span> В каком роддоме / городе ты родилась?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">46.</span> Сколько ты весила при рождении?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">47.</span> Какого роста ты была в год?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">48.</span> Какое твоё самое первое слово?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">49.</span> В каком возрасте ты пошла?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">50.</span> Как звали твою первую учительницу?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">51.</span> Какая была твоя первая оценка в школе?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">52.</span> Какой был твой первый номер телефона?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">53.</span> Как звали твоего первого питомца?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">54.</span> Какая была твоя первая работа?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">55.</span> Сколько стоил твой первый самостоятельно заработанный кофе?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">56.</span> Что ты сделала в первую минуту, когда тебе исполнилось 18?</div><textarea rows="1"></textarea></div>
+  <div class="question"><div class="q-text"><span class="q-num">57.</span> Последние цифры номера твоего паспорта? <i>(только для самых доверенных 😄)</i></div><textarea rows="1"></textarea></div>
+
+  <div class="buttons">
+    <button id="saveBtn">🐱 Сохранить и отправить Лерке</button>
+    <button id="clearBtn">🧹 Очистить всё</button>
+  </div>
+  <div id="status"></div>
+  <div class="hint">Нажми кнопку → выбери «Печать» → сохрани как PDF 🐾</div>
+</div>
+
+<script>
+  // Авторастяжение полей
+  function autoGrow(el) {
+    el.style.height = 'auto';
+    el.style.height = (el.scrollHeight) + 'px';
+  }
+  document.querySelectorAll('textarea').forEach(ta => {
+    autoGrow(ta);
+    ta.addEventListener('input', () => autoGrow(ta));
+  });
+
+  // Очистка
+  document.getElementById('clearBtn').addEventListener('click', () => {
+    if (confirm('Точно очистить все ответы? 🐱')) {
+      document.querySelectorAll('textarea').forEach(ta => { ta.value = ''; autoGrow(ta); });
+      document.getElementById('status').style.display = 'none';
+    }
+  });
+
+  const statusEl = document.getElementById('status');
+
+  document.getElementById('saveBtn').addEventListener('click', () => {
+    const filled = [...document.querySelectorAll('textarea')].some(t => t.value.trim() !== '');
+    if (!filled) {
+      alert('Ты пока ничего не ответила 😅 Заполни хотя бы один ответ!');
+      return;
+    }
+
+    // Просто вызываем системное окно печати.
+    // На iPhone в нём нужно нажать «Поделиться» (или pinch-to-zoom превью), чтобы сохранить как PDF.
+    statusEl.textContent = '📄 Сейчас откроется меню печати. Нажми «Поделиться» и выбери «Сохранить в Файлы» 🐾';
+    statusEl.style.display = 'block';
+    
+    window.print();
+  });
+</script>
+</body>
+</html>
